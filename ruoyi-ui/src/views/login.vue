@@ -1,37 +1,59 @@
 <template>
   <div class="login">
-    <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form">
-      <div style="text-align: center;">
-        <svg xmlns="http://www.w3.org/2000/svg" :width="144" :height="48" viewBox="0 0 433 97">
+    <el-form
+      ref="loginForm"
+      :model="loginForm"
+      :rules="loginRules"
+      class="login-form"
+    >
+      <div style="text-align: center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          :width="144"
+          :height="48"
+          viewBox="0 0 433 97"
+        >
           <g>
             <g id="logotype">
-              <path id="logotype-b-47"
+              <path
+                id="logotype-b-47"
                 d="M185.2,46.88a13.77,13.77,0,0,0,8.8-13c0-11.7-8.3-17.5-19.7-17.5H144.4V80h32.5c10,0,19.8-7,19.8-17.7C196.7,49.58,185.2,47,185.2,46.88ZM160,29.58h11.6a5.66,5.66,0,0,1,6,5.31q0,.34,0,.69a5.93,5.93,0,0,1-6,5.81H159.9Zm11.7,37.1H160.1V54.18h11.3c5.7,0,8.4,2.5,8.4,6.2C179.8,65,176.4,66.68,171.7,66.68Z"
-                style="fill: #ed0007;fill-rule: evenodd" />
-              <path id="logotype-o-47"
+                style="fill: #ed0007; fill-rule: evenodd"
+              />
+              <path
+                id="logotype-o-47"
                 d="M231.1,14.78c-18.4,0-29.2,14.7-29.2,33.3s10.8,33.3,29.2,33.3,29.2-14.6,29.2-33.3S249.6,14.78,231.1,14.78Zm0,51.4c-9,0-13.5-8.1-13.5-18.1s4.5-18,13.5-18,13.6,8.1,13.6,18C244.7,58.18,240.1,66.18,231.1,66.18Z"
-                style="fill: #ed0007;fill-rule: evenodd" />
-              <path id="logotype-s-47"
+                style="fill: #ed0007; fill-rule: evenodd"
+              />
+              <path
+                id="logotype-s-47"
                 d="M294.2,41.38l-2.2-.5c-5.4-1.1-9.7-2.5-9.7-6.4,0-4.2,4.1-5.9,7.7-5.9a17.86,17.86,0,0,1,13,5.9l9.9-9.8c-4.5-5.1-11.8-10-23.2-10-13.4,0-23.6,7.5-23.6,20,0,11.4,8.2,17,18.2,19.1l2.2.5c8.3,1.7,11.4,3,11.4,7,0,3.8-3.4,6.3-8.6,6.3-6.2,0-11.8-2.7-16.1-8.2l-10.1,10c5.6,6.7,12.7,11.9,26.4,11.9,11.9,0,24.6-6.8,24.6-20.7C314.3,46.08,303.3,43.28,294.2,41.38Z"
-                style="fill: #ed0007;fill-rule: evenodd" />
-              <path id="logotype-c-47"
+                style="fill: #ed0007; fill-rule: evenodd"
+              />
+              <path
+                id="logotype-c-47"
                 d="M349.7,66.18c-7,0-14.3-5.8-14.3-18.5,0-11.3,6.8-17.6,13.9-17.6,5.6,0,8.9,2.6,11.5,7.1l12.8-8.5c-6.4-9.7-14-13.8-24.5-13.8-19.2,0-29.6,14.9-29.6,32.9,0,18.9,11.5,33.7,29.4,33.7,12.6,0,18.6-4.4,25.1-13.8L361.1,59C358.5,63.18,355.7,66.18,349.7,66.18Z"
-                style="fill: #ed0007;fill-rule: evenodd" />
-              <polygon id="logotype-h-47"
+                style="fill: #ed0007; fill-rule: evenodd"
+              />
+              <polygon
+                id="logotype-h-47"
                 points="416.3 16.38 416.3 39.78 397 39.78 397 16.38 380.3 16.38 380.3 79.98 397 79.98 397 54.88 416.3 54.88 416.3 79.98 433 79.98 433 16.38 416.3 16.38"
-                style="fill: #ed0007;fill-rule: evenodd" />
+                style="fill: #ed0007; fill-rule: evenodd"
+              />
             </g>
             <g id="symbol">
               <path
-                d="M48.2.18a48.2,48.2,0,1,0,48.2,48.2A48.2,48.2,0,0,0,48.2.18Zm0,91.9a43.7,43.7,0,1,1,43.7-43.7,43.71,43.71,0,0,1-43.7,43.7Z" />
+                d="M48.2.18a48.2,48.2,0,1,0,48.2,48.2A48.2,48.2,0,0,0,48.2.18Zm0,91.9a43.7,43.7,0,1,1,43.7-43.7,43.71,43.71,0,0,1-43.7,43.7Z"
+              />
               <path
-                d="M68.1,18.28H64.8v16.5H31.7V18.28H28.3a36.06,36.06,0,0,0,0,60.2h3.4V62H64.8v16.5h3.3a36.05,36.05,0,0,0,0-60.2ZM27.1,72A31.59,31.59,0,0,1,24.47,27.4a32.51,32.51,0,0,1,2.63-2.62Zm37.7-14.6H31.7V39.28H64.8Zm4.5,14.5v-10h0V34.78h0v-10a31.65,31.65,0,0,1,2.39,44.71A33.68,33.68,0,0,1,69.3,71.88Z" />
+                d="M68.1,18.28H64.8v16.5H31.7V18.28H28.3a36.06,36.06,0,0,0,0,60.2h3.4V62H64.8v16.5h3.3a36.05,36.05,0,0,0,0-60.2ZM27.1,72A31.59,31.59,0,0,1,24.47,27.4a32.51,32.51,0,0,1,2.63-2.62Zm37.7-14.6H31.7V39.28H64.8Zm4.5,14.5v-10h0V34.78h0v-10a31.65,31.65,0,0,1,2.39,44.71A33.68,33.68,0,0,1,69.3,71.88Z"
+              />
             </g>
           </g>
         </svg>
       </div>
-     <h3 class="title">TEF3.3 RFID备件库管理系统</h3>
-<!--      <h3 class="title">QinP/TEF3 备件库管理系统</h3>-->
+      <h3 class="title">TEF3.3 RFID备件库管理系统</h3>
+      <!--      <h3 class="title">QinP/TEF3 备件库管理系统</h3>-->
       <!-- <el-form-item prop="username">
         <el-input v-model="loginForm.username" type="text" auto-complete="off" placeholder="账号">
           <svg-icon slot="prefix" icon-class="user" class="el-input__icon input-icon" />
@@ -58,15 +80,22 @@
         </div>
       </el-form-item>
       <el-checkbox v-model="loginForm.rememberMe" style="margin:0px 0px 25px 0px;">记住密码</el-checkbox> -->
-      <el-form-item style="width:100%;">
+      <el-form-item style="width: 100%">
         <!-- <el-button :loading="loading" size="medium" type="primary" style="width:100%;/display: none" -->
-        <el-button :loading="loading" size="medium" type="primary" style="width:100%;/display: none"
-          @click.native.prevent="handleLogin" >
+        <el-button
+          :loading="loading"
+          size="medium"
+          type="primary"
+          style="width: 100%; /display: none"
+          @click.native.prevent="handleLogin"
+        >
           <span v-if="!loading">登 录</span>
           <span v-else>登 录 中...</span>
         </el-button>
-        <div v-if="register" style="float: right;">
-          <router-link class="link-type" :to="'/register'">立即注册</router-link>
+        <div v-if="register" style="float: right">
+          <router-link class="link-type" :to="'/register'"
+            >立即注册</router-link
+          >
         </div>
       </el-form-item>
     </el-form>
@@ -78,58 +107,58 @@
 </template>
 
 <script>
-import { ssologin } from '@/api/system/user'
-import Cookies from 'js-cookie'
-import { encrypt, decrypt } from '@/utils/jsencrypt'
+import { ssologin } from "@/api/system/user";
+import Cookies from "js-cookie";
+import { encrypt, decrypt } from "@/utils/jsencrypt";
 
 export default {
-  name: 'Login',
+  name: "Login",
   data() {
     return {
-      codeUrl: '',
-      usernamee: '',
-      passwordd: '',
+      codeUrl: "",
+      usernamee: "",
+      passwordd: "",
       loginForm: {
-        username: 'admin',
-        password: '',
+        username: "admin",
+        password: "",
         // password: 'admin123',
         rememberMe: false,
-        code: '',
-        uuid: ''
+        code: "",
+        uuid: "",
       },
       loginRules: {
         username: [
-          { required: true, trigger: 'blur', message: '请输入您的账号' }
+          { required: true, trigger: "blur", message: "请输入您的账号" },
         ],
         password: [
-          { required: true, trigger: 'blur', message: '请输入您的密码' }
+          { required: true, trigger: "blur", message: "请输入您的密码" },
         ],
-        code: [{ required: true, trigger: 'change', message: '请输入验证码' }]
+        code: [{ required: true, trigger: "change", message: "请输入验证码" }],
       },
       loading: false,
       // 验证码开关
       // captchaEnabled: true,
       // 注册开关
       register: false,
-      redirect: undefined
-    }
+      redirect: undefined,
+    };
   },
   watch: {
     $route: {
       handler: function (route) {
-        this.redirect = route.query && route.query.redirect
+        this.redirect = route.query && route.query.redirect;
       },
-      immediate: true
-    }
+      immediate: true,
+    },
   },
 
-mounted:function(){
-      this.handleLogin();
-},
-//登录sso打开它
+  mounted: function () {
+    this.handleLogin();
+  },
+  // 登录sso打开它
   created() {
     // this.getCode()
-    this.getCookie()
+    this.getCookie();
   },
   methods: {
     // getCode() {
@@ -142,14 +171,15 @@ mounted:function(){
     //   })
     // },
     getCookie() {
-      const username = Cookies.get('username')
-      const password = Cookies.get('password')
-      const rememberMe = Cookies.get('rememberMe')
+      const username = Cookies.get("username");
+      const password = Cookies.get("password");
+      const rememberMe = Cookies.get("rememberMe");
       this.loginForm = {
         username: username === undefined ? this.loginForm.username : username,
-        password: password === undefined ? this.loginForm.password : decrypt(password),
-        rememberMe: rememberMe === undefined ? false : Boolean(rememberMe)
-      }
+        password:
+          password === undefined ? this.loginForm.password : decrypt(password),
+        rememberMe: rememberMe === undefined ? false : Boolean(rememberMe),
+      };
     },
     // getsslogin(usernamee){
     //   ssologin(usernamee).then(a => {
@@ -163,7 +193,7 @@ mounted:function(){
     //   });
     // },
     handleResponse(response) {
-      console.log("undefined", response)
+      console.log("undefined", response);
       // const usernamee = response.account.username
       // this.getsslogin(usernamee)
       // console.log(usernamee);
@@ -172,51 +202,53 @@ mounted:function(){
        * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/request-response-object.md#response
        */
       // let passwordd = '';
+      //  console.log(a)
+      //  alert("tanchu")
+      //  console.log(passowrdd+"密码")
+      // alert("chufa")
 
+      // console.log(this.passwordd);
+      // alert(passwordd);
+      if (response !== null) {
+        const username = response.account.username;
+        // console.log("username" + username);
 
-        //  console.log(a)
-        //  alert("tanchu")
-        //  console.log(passowrdd+"密码")
-        // alert("chufa")
+        // alert(username+",登录成功！");
+        // showWelcomeMessage(username);
+        // Step1 POST username  到 后台登录验证接口
+        // 如果用户名已经存在， 则后台随机生成一个密码，并更新到用户表，然后返 回到此处。
+        // 如果用户名不存在，则注册一个用户，并随即生成一个密码，新增到用户表后，把密码返回到此处。
 
-        // console.log(this.passwordd);
-        // alert(passwordd);
-        if (response !== null) {
-          const username = response.account.username;
-          //console.log("username" + username);
+        // 后台接口返回注册后的密码 （暂行）
 
-          //alert(username+",登录成功！");
-          //showWelcomeMessage(username);
-          //Step1 POST username  到 后台登录验证接口
-          //如果用户名已经存在， 则后台随机生成一个密码，并更新到用户表，然后返 回到此处。
-          //如果用户名不存在，则注册一个用户，并随即生成一个密码，新增到用户表后，把密码返回到此处。
-
-          //后台接口返回注册后的密码 （暂行）
-
-          //console.log("这是密码")
-          // console.log(a + "没加密");
-          this.loginForm.username = username;//username;//使用SSO 返回的用户名
-          // this.loginForm.username ="admin";
-          // this.loginForm.password = "admin123";// 此处需要使用 Step1 返回的密码， 此处举例 admin123 将显示密码错误！
-          // alert("点击确认继续登录！" + username);
-          //利用原来的登录逻辑，实现SSO 验证后，在原系统中登录。
-              this.$store.dispatch('Login', this.loginForm.username).then(() => {
-                this.$router.push({ path: this.redirect || '/' }).catch(() => { })
-                // alert(this.loginForm.username + this.loginForm.password);
-              }).catch(() => {
-                this.loading = false
-                // if (this.captchaEnabled) {
-                //   this.getCode()
-                // }
-              })
-          //   }
-          //   else {
-          //     alert("账号或密码未填写完整！");
-          //   }
-          // })
+        // console.log("这是密码")
+        // console.log(a + "没加密");
+        this.loginForm.username = username;
+        // username;//使用SSO 返回的用户名
+        // this.loginForm.username ="admin";
+        // this.loginForm.password = "admin123";// 此处需要使用 Step1 返回的密码， 此处举例 admin123 将显示密码错误！
+        // alert("点击确认继续登录！" + username);
+        // 利用原来的登录逻辑，实现SSO 验证后，在原系统中登录。
+        this.$store
+          .dispatch("Login", this.loginForm.username)
+          .then(() => {
+            this.$router.push({ path: this.redirect || "/" }).catch(() => {});
+            // alert(this.loginForm.username + this.loginForm.password);
+          })
+          .catch(() => {
+            this.loading = false;
+            // if (this.captchaEnabled) {
+            //   this.getCode()
+            // }
+          });
+        //   }
+        //   else {
+        //     alert("账号或密码未填写完整！");
+        //   }
+        // })
       } else {
-          selectAccount();
-        }
+        selectAccount();
+      }
       // });
 
       // let that = this;
@@ -269,48 +301,51 @@ mounted:function(){
       // }
     },
     handleLogin() {
-      //sso单点登录方法
-      console.log("handleLogin");
-      const loginResponse = myMSALObj.loginPopup(loginRequest)
-        .then(
-          this.handleResponse
-        ).catch(error => {
-          // handle error
-          console.log(error);
-        });
-      console.log(loginResponse);
-      return;
-      //普通登录
-      // this.loginForm.username = "admin",
-      //   this.loginForm.password="admin123"
-      // this.$refs.loginForm.validate(valid => {
-      //   if (valid) {
-      //     this.loading = true
-      //     if (this.loginForm.rememberMe) {
-      //       Cookies.set('username', "admin", { expires: 30 })
-      //       Cookies.set('password', encrypt(password), { expires: 30 })
-      //       Cookies.set('rememberMe', this.loginForm.rememberMe, { expires: 30 })
-      //     } else {
-      //       Cookies.remove('username')
-      //       Cookies.remove('password')
-      //       Cookies.remove('rememberMe')
-      //     }
-      //     this.$store.dispatch('Login', this.loginForm).then(() => {
-      //       this.$router.push({ path: this.redirect || '/' }).catch(() => {
-      //       })
-      //       alert(this.loginForm.username + this.loginForm.password);
-      //     }).catch(() => {
-      //       this.loading = false
-      //       // if (this.captchaEnabled) {
-      //       //   this.getCode()
-      //       // }
-      //     })
-      //   }
-      // })
-
-    }
-  }
-}
+      // sso单点登录方法
+      // console.log("handleLogin");
+      // const loginResponse = myMSALObj.loginPopup(loginRequest)
+      //   .then(
+      //     this.handleResponse
+      //   ).catch(error => {
+      //     // handle error
+      //     console.log(error);
+      //   });
+      // console.log(loginResponse);
+      // return;
+      // 普通登录
+      (this.loginForm.username = "admin"),
+        (this.loginForm.password = "admin123");
+      this.$refs.loginForm.validate((valid) => {
+        if (valid) {
+          this.loading = true;
+          if (this.loginForm.rememberMe) {
+            Cookies.set("username", "admin", { expires: 30 });
+            Cookies.set("password", encrypt(password), { expires: 30 });
+            Cookies.set("rememberMe", this.loginForm.rememberMe, {
+              expires: 30,
+            });
+          } else {
+            Cookies.remove("username");
+            Cookies.remove("password");
+            Cookies.remove("rememberMe");
+          }
+          this.$store
+            .dispatch("Login", this.loginForm)
+            .then(() => {
+              this.$router.push({ path: this.redirect || "/" }).catch(() => {});
+              alert(this.loginForm.username + this.loginForm.password);
+            })
+            .catch(() => {
+              this.loading = false;
+              // if (this.captchaEnabled) {
+              //   this.getCode()
+              // }
+            });
+        }
+      });
+    },
+  },
+};
 </script>
 
 <style rel="stylesheet/scss" lang="scss">

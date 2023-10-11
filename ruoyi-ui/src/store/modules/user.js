@@ -34,34 +34,34 @@ const user = {
 
   actions: {
     // 登录
-    // Login({ commit }, userInfo) {
-    //   const username = userInfo.username.trim()
-    //   const password = userInfo.password
-    //   const code = userInfo.code
-    //   const uuid = userInfo.uuid
-    //   return new Promise((resolve, reject) => {
-    //     login(username, password, code, uuid).then(res => {
-    //       setToken(res.token)
-    //       commit('SET_TOKEN', res.token)
-    //       resolve()
-    //     }).catch(error => {
-    //       reject(error)
-    //     })
-    //   })
-    // },
-     // sso登录
-     Login({ commit }, cardid) {
+    Login({ commit }, userInfo) {
+      const username = userInfo.username.trim()
+      const password = userInfo.password
+      const code = userInfo.code
+      const uuid = userInfo.uuid
       return new Promise((resolve, reject) => {
-        getcardid(cardid).then(res => {
-          console.log(res.token)
+        login(username, password, code, uuid).then(res => {
           setToken(res.token)
           commit('SET_TOKEN', res.token)
-          resolve(res)
+          resolve()
         }).catch(error => {
           reject(error)
         })
       })
     },
+     // sso登录
+    //  Login({ commit }, cardid) {
+    //   return new Promise((resolve, reject) => {
+    //     getcardid(cardid).then(res => {
+    //       console.log(res.token)
+    //       setToken(res.token)
+    //       commit('SET_TOKEN', res.token)
+    //       resolve(res)
+    //     }).catch(error => {
+    //       reject(error)
+    //     })
+    //   })
+    // },
 
     // 获取用户信息
     GetInfo({ commit, state }) {

@@ -26,7 +26,7 @@ export function addUser(data) {
     data: data
   })
 }
-//sso登录方法
+// sso登录方法
 export function ssologin(data) {
   // console.log("执行到" + data);
   return request({
